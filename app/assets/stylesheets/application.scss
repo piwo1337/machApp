@@ -43,6 +43,27 @@ a.nav-link.active{
   background-color: #f0ad4e;
 }
 
+@media (min-width: 768px){
+    .navbar-expand-custom {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex !important;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 400px) {
   .img-header .fa-header-icon{
     width: 400px !important;
@@ -192,7 +213,7 @@ a.nav-link.active{
   }
 
   .bg-grey{
-  padding: 10px;
+
   background-color: #333;
   border-top: 6px solid #f0ad4e;
   border-bottom: 6px solid #f0ad4e;
@@ -212,6 +233,10 @@ a.nav-link.active{
     max-width: 237px;
     opacity: 0.8;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  .card-title {
+    padding-top: 5px;
   }
 
   .card:hover {
@@ -240,6 +265,11 @@ a.nav-link.active{
   .page-link:hover{
     background-color: #fff !important;
     color: #f0ad4e;
+  }
+
+  .btn-outline-warning{
+    margin-left: 50px;
+    margin-bottom: 10px;
   }
 }
 

@@ -1,9 +1,9 @@
-<nav id="navbar" class="navbar navbar-toggleable-sm fixed-top" data-spy="affix">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon">&#9776;</span>
+<nav class="navbar navbar-expand-lg navbar-expand-custom fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon">&#9776;</span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarToggler">
-    <%= link_to (fa_icon 'space-shuttle', text: "SMARTMACHiNES") , "#pagetop" , class: 'navbar-brand d-flex mx-auto w-50 page-scroll' %>
+  <div class="navbar-collapse collapse" id="collapsingNavbar">
+    <%= link_to (fa_icon 'space-shuttle', text: "SMARTMACHiNES") , "#pagetop" , class: 'navbar-brand page-scroll d-flex mx-auto w-50' %>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <%= link_to 'Home', '#pagetop' , class: "nav-link page-scroll" %>
@@ -28,3 +28,4 @@
     </ul>
   </div>
 </nav>
+
